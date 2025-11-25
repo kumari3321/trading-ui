@@ -1,0 +1,20 @@
+<div class="row card">
+	<div class="left">
+		<div class="flag">{{ market.flagEmoji || '🌐' }}</div>
+		<div class="meta">
+			<div class="time muted">{{ market.time }}</div>
+			<div class="pair">{{ market.symbol }}</div>
+			<div class="change green">
+				{{ market.change > 0 ? '+' : ''}}{{ market.change }} ({{ market.changePercent }}%)
+			</div>
+		</div>
+	</div>
+	<div class="prices">
+		<div class="price red">{{ market.bid | number:'1.0-6' }}</div>
+		<div class="lh muted">L:{{ market.low | number:'1.0-0' }}</div>
+	</div>
+	<div class="prices right">
+		<div class="price green">{{ market.ask | number:'1.0-6' }}</div>
+		<div class="lh muted">H:{{ market.high | number:'1.0-0' }}</div>
+	</div>
+</div>

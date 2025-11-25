@@ -1,0 +1,5 @@
+<div class="app-shell">
+	<app-top-bar [tabs]="tabs" [activeIndex]="activeTabIndex()" (tabChange)="setTab($event)"></app-top-bar>
+	<app-market-list [markets]="markets()"></app-market-list>
+	<app-bottom-nav></app-bottom-nav>
+</div>

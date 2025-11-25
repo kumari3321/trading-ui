@@ -1,0 +1,28 @@
+.topbar{
+	position:sticky;
+	top:0;
+	background:var(--bg);
+	z-index:5;
+	padding:12px 12px 0 12px;
+}
+
+.row{
+	display:flex;
+	align-items:center;
+}
+
+.spacer{
+	flex:1;
+}
+
+.icon-btn{
+	background:transparent;
+	border:0;
+	color:var(--text);
+	padding:6px;
+	border-radius:8px;
+}
+.icon-btn:hover{
+	background:var(--surface-2);
+}
+

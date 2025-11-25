@@ -1,0 +1,5 @@
+<nav class="tabs">
+	@for (tab of tabs; track tab; let i = $index) {
+		<button class="tab" [class.active]="i === activeIndex" (click)="tabSelect.emit(i)">{{ tab }}</button>
+	}
+</nav>

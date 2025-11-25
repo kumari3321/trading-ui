@@ -1,0 +1,18 @@
+<header class="topbar">
+	<div class="row">
+		<button class="icon-btn" aria-label="menu">
+			<!-- hamburger -->
+			<svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+				<path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+			</svg>
+		</button>
+		<div class="spacer"></div>
+		<button class="icon-btn" aria-label="filter">
+			<!-- filter icon -->
+			<svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+				<path d="M3 6h18M6 12h12M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+			</svg>
+		</button>
+	</div>
+	<app-tabs [tabs]="tabs" [activeIndex]="activeIndex" (tabSelect)="tabChange.emit($event)"></app-tabs>
+</header>

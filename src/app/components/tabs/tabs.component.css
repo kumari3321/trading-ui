@@ -1,0 +1,20 @@
+.tabs{
+	display:flex;
+	gap:12px;
+	padding:10px 6px 12px 6px;
+	overflow:auto;
+}
+.tab{
+	background:transparent;
+	border:0;
+	color:var(--muted);
+	padding:8px 12px;
+	border-radius:18px;
+	white-space:nowrap;
+}
+.tab.active{
+	background:var(--surface-2);
+	color:var(--text);
+	font-weight:600;
+}
+
